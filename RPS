@@ -1,0 +1,75 @@
+import random as r 
+
+while True:
+    choices = ['rock', 'paper', 'scissors']
+
+    computer = r.choice(choices)
+
+
+    player = None
+    
+    while player not in choices:
+        player = input('Choose rock, paper, scissors').lower()
+        
+        
+    if player == computer:
+        print('Computer choose', computer)
+        
+        print('Player choose', player)
+        
+        print("Tie")
+        
+    elif player == 'rock':
+        
+        if computer == 'paper':
+            print('Computer choose', computer)
+        
+            print('Player choose', player)
+            
+            print('You lose')
+        
+        elif computer == 'scissors':
+            print('Computer choose', computer)
+        
+            print('Player choose', player)
+            
+            print('You win')
+        
+    elif player == 'paper':
+        
+        if computer == 'rock':
+            print('Computer choose', computer)
+        
+            print('Player choose', player)
+            
+            print('You lose')
+        
+        elif computer == 'scissors':
+            print('Computer choose', computer)
+        
+            print('Player choose', player)
+            
+            print('You win')
+    
+    elif player == 'scissors':
+    
+        if computer == 'rock':
+            print('Computer choose', computer)
+        
+            print('Player choose', player)
+            
+            print('You lose')
+            
+        elif computer == 'paper':
+            print('Computer choose', computer)
+        
+            print('Player choose', player)
+
+            print('You win')
+            
+    play_again = input('Wish to play again? (Yes/No):').lower
+    
+    if play_again != 'yes':
+        break
+
+print('See you next time!')
